@@ -12,9 +12,9 @@
 		   
 	<!--  Theme-Chooser Replacements -->
 	
-		<project path="vendor/tmobile/products/themes" name="android_vendor_tmobile_products_themes" remote="Theme-Chooser" revision="refs/heads/gingerbread" />
-		<project path="vendor/tmobile/apps/ThemeChooser" name="themes-platform-vendor-tmobile-apps-ThemeChooser" remote="Theme-Chooser" revision="refs/heads/gingerbread" />
-		<project path="vendor/tmobile/libs/com.tmobile.themes" name="android_vendor_tmobile_libs_com.tmobile.themes" remote="Theme-Chooser" revision="refs/heads/gingerbread" />
+		<project path="vendor/tmobile/products/themes" name="android_vendor_tmobile_products_themes" remote="Theme-Chooser" revision="refs/heads/jellybean" />
+		<project path="vendor/tmobile/apps/ThemeChooser" name="themes-platform-vendor-tmobile-apps-ThemeChooser" remote="Theme-Chooser" revision="refs/heads/jellybean" />
+		<project path="vendor/tmobile/libs/com.tmobile.themes" name="android_vendor_tmobile_libs_com.tmobile.themes" remote="Theme-Chooser" revision="refs/heads/jellybean" />
 	
 	<!--  Theme-Chooser additions -->
 	
