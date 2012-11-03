@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+ 
+ <remote  name="Theme-Chooser"
+           fetch="git://github.com/Theme-Chooser" />
+		   
+		   <!--  Theme-Chooser Removals -->
+		   
+		   <remove-project name="CyanogenMod/themes-platform-vendor-tmobile-apps-ThemeChooser" />
+		   <remove-project name="CyanogenMod/android_vendor_tmobile_products_themes" />
+		   <remove-project name="CyanogenMod/android_vendor_tmobile_libs_com.tmobile.themes" />
+		   
+	<!--  Theme-Chooser Replacements -->
+	
+		<project path="vendor/tmobile/products/themes" name="android_vendor_tmobile_products_themes" remote="Theme-Chooser" revision="refs/heads/gingerbread" />
+		<project path="vendor/tmobile/apps/ThemeChooser" name="themes-platform-vendor-tmobile-apps-ThemeChooser" remote="Theme-Chooser" revision="refs/heads/gingerbread" />
+		<project path="vendor/tmobile/libs/com.tmobile.themes" name="android_vendor_tmobile_libs_com.tmobile.themes" remote="Theme-Chooser" revision="refs/heads/gingerbread" />
+	
+	<!--  Theme-Chooser additions -->
+	
+		<project path="vendor/tmobile/build/common" remote="Theme-Chooser" revision="refs/heads/master" name="common-platform-vendor-tmobile-build-common">
+    <copyfile src="Android.mk" dest="vendor/tmobile/Android.mk" />
+    <copyfile src="vendorsetup.sh" dest="vendor/tmobile/vendorsetup.sh" />
+  </project>	
+
+		<project path="packages/apps/Launcher2" name="themes-platform-packages-apps-Launcher2" remote="Theme-Chooser" revision="refs/heads/themes-2.3.1_r1" />
+		<project path="vendor/tmobile/libs/com.tmobile.themehelper" name="android_vendor_tmobile_libs_com.tmobile.themehelper" remote="Theme-Chooser" revision="refs/heads/master" />
+		<project path="frameworks/policies/base" name="android_frameworks_policies_base" remote="Theme-Chooser" revision="refs/heads/master" />
+		
+
+
+		
