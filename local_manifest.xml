@@ -23,7 +23,6 @@
     <copyfile src="vendorsetup.sh" dest="vendor/tmobile/vendorsetup.sh" />
   </project>	
 
-		<project path="packages/apps/Launcher2" name="themes-platform-packages-apps-Launcher2" remote="Theme-Chooser" revision="refs/heads/master" />
 		<project path="vendor/tmobile/libs/com.tmobile.themehelper" name="android_vendor_tmobile_libs_com.tmobile.themehelper" remote="Theme-Chooser" revision="refs/heads/master" />
 		<project path="frameworks/policies/base" name="android_frameworks_policies_base" remote="Theme-Chooser" revision="refs/heads/master" />
 		
