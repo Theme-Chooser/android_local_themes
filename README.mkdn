@@ -222,7 +222,7 @@ Now enter the following to initialize the repository:
 
 To initialize your local repository using the T-Mobile Theme Chooser Master Branch manifest, use commands like these:
 
-    repo init -u git://github.com/CyanogenMod/android.git -b gingerbread
+    repo init -u git://github.com/CyanogenMod/android.git -b ics
 	
 	curl -L -o .repo/local_manifest.xml -O -L https://raw.github.com/Theme-Chooser/android_local_themes/master/local_manifest.xml
 
