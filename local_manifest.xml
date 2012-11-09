@@ -1,35 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
  
- <remote  name="Theme-Chooser"
-           fetch="git://github.com/Theme-Chooser" />
+	<remote name="Theme-Chooser"
+			fetch="git://github.com/Theme-Chooser" />
+			
+	<remote name="Theme-Chooser2"
+			fetch="git://github.com/Theme-Chooser" />
+			
+	<default revision="refs/heads/gingerbread"
+			remote="Theme-Chooser"
+			sync-j="4" />
+	
+	<default revision="refs/heads/master"
+			remote="Theme-Chooser2"
+			sync-j="4" />
 		   
 		   <!--  Theme-Chooser Removals -->
 		   
-		   <remove-project name="CyanogenMod/themes-platform-vendor-tmobile-apps-ThemeChooser" />
-		   <remove-project name="CyanogenMod/android_vendor_tmobile_products_themes" />
-		   <remove-project name="CyanogenMod/android_vendor_tmobile_libs_com.tmobile.themes" />
-		   <remove-project name="CyanogenMod/android_vendor_tmobile_themes_Androidian" />
-		   <remove-project name="CyanogenMod/android_vendor_tmobile_themes_Cyanbread" />
+		<remove-project name="CyanogenMod/themes-platform-vendor-tmobile-apps-ThemeChooser" />
+		<remove-project name="CyanogenMod/android_vendor_tmobile_products_themes" />
+		<remove-project name="CyanogenMod/android_vendor_tmobile_libs_com.tmobile.themes" />
+		<remove-project name="CyanogenMod/android_vendor_tmobile_themes_Androidian" />
+		<remove-project name="CyanogenMod/android_vendor_tmobile_themes_Cyanbread" />
 		   
 	<!--  Theme-Chooser Replacements -->
 	
-		<project path="vendor/tmobile/products/themes" name="android_vendor_tmobile_products_themes" remote="Theme-Chooser" revision="refs/heads/gingerbread" />
-		<project path="vendor/tmobile/apps/ThemeChooser" name="themes-platform-vendor-tmobile-apps-ThemeChooser" remote="Theme-Chooser" revision="refs/heads/gingerbread" />
-		<project path="vendor/tmobile/libs/com.tmobile.themes" name="android_vendor_tmobile_libs_com.tmobile.themes" remote="Theme-Chooser" revision="refs/heads/gingerbread" />
+		<project path="vendor/tmobile/products/themes" name="android_vendor_tmobile_products_themes" />
+		<project path="vendor/tmobile/apps/ThemeChooser" name="themes-platform-vendor-tmobile-apps-ThemeChooser" />
+		<project path="vendor/tmobile/libs/com.tmobile.themes" name="android_vendor_tmobile_libs_com.tmobile.themes" />
 	
 	<!--  Theme-Chooser additions -->
 	
-		<project path="vendor/tmobile/build/common" remote="Theme-Chooser" revision="refs/heads/master" name="common-platform-vendor-tmobile-build-common">
-    <copyfile src="Android.mk" dest="vendor/tmobile/Android.mk" />
-    <copyfile src="vendorsetup.sh" dest="vendor/tmobile/vendorsetup.sh" />
-  </project>	
+		<project path="vendor/tmobile/build/common"  name="common-platform-vendor-tmobile-build-common">
+		<copyfile src="Android.mk" dest="vendor/tmobile/Android.mk" />
+		<copyfile src="vendorsetup.sh" dest="vendor/tmobile/vendorsetup.sh" />
+		</project>	
 
-		<project path="vendor/tmobile/libs/com.tmobile.themehelper" name="android_vendor_tmobile_libs_com.tmobile.themehelper" remote="Theme-Chooser" revision="refs/heads/master" />
-		<project path="frameworks/policies/base" name="android_frameworks_policies_base" remote="Theme-Chooser" revision="refs/heads/master" />
-		<project path="vendor/tmobile/themes/Liquid_Blueberry" name="android_vendor_tmobile_themes_Liquid_Blueberry" remote="Theme-Chooser" revision="refs/heads/gingerbread" />
-		   <project path="vendor/tmobile/themes/Androidian" name="android_vendor_tmobile_themes_Androidian" remote="Theme-Chooser" revision="refs/heads/gingerbread" />
-		   <project path="vendor/tmobile/themes/Cyanbread" name="android_vendor_tmobile_themes_Cyanbread" remote="Theme-Chooser" revision="refs/heads/gingerbread" />
+		<project path="vendor/tmobile/libs/com.tmobile.themehelper" name="android_vendor_tmobile_libs_com.tmobile.themehelper" />
+		<project path="frameworks/policies/base" name="android_frameworks_policies_base"  />
+		<project path="vendor/tmobile/themes/Liquid_Blueberry" name="android_vendor_tmobile_themes_Liquid_Blueberry" />
+		<project path="vendor/tmobile/themes/Androidian" name="android_vendor_tmobile_themes_Androidian" />
+		<project path="vendor/tmobile/themes/Cyanbread" name="android_vendor_tmobile_themes_Cyanbread" />
 		
 
 
